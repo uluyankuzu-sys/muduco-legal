@@ -15,7 +15,7 @@
 </header>
 
 <h1>Gizlilik Politikası</h1>
-<p class="updated">Son güncelleme: 9 Ağustos 2026</p>
+<p class="updated">Son güncelleme: 7 Ekim 2026</p>
 
 <div class="card">
   <p><strong>Kısaca:</strong> Muduco seni takip etmez. Reklam ağı, analitik veya
@@ -38,7 +38,7 @@ uygulamaları kabul etmiş olursun.</p>
   <tr><th>Veri</th><th>Ne zaman</th><th>Nerede durur</th></tr>
   <tr>
     <td><strong>E-posta adresi</strong></td>
-    <td>Yalnızca e-posta veya Google ile hesap açarsan</td>
+    <td>Yalnızca e-posta, Google veya Apple ile hesap açarsan</td>
     <td>Google Firebase Authentication sunucularında</td>
   </tr>
   <tr>
@@ -87,6 +87,10 @@ Uygulamayı kapattığında geriye hiçbir ses verisi kalmaz.</p>
 <p>"El Akoru" oyunu parmak hareketlerinden akor çalmanı sağlar. Görüntü cihazında
 işlenir; oyuna yalnızca "hangi akor çalındı" bilgisi geçer. <strong>Fotoğraf veya video
 çekilmez, kaydedilmez ve hiçbir sunucuya gönderilmez.</strong></p>
+<p>El hareketlerini tanıyan açık kaynak kütüphane (Google MediaPipe) ve el modeli,
+oyunu açtığında <strong>jsDelivr</strong> ve <strong>Google</strong> sunucularından
+indirilir. Bu indirme sırasında, her web isteğinde olduğu gibi, cihazının IP adresi bu
+sunuculara görünür; kamera görüntüsü ya da başka bir kişisel veri gönderilmez.</p>
 
 <h2>3. Yapmadıklarımız</h2>
 <ul>
@@ -103,13 +107,18 @@ işlenir; oyuna yalnızca "hangi akor çalındı" bilgisi geçer. <strong>Fotoğ
 üzerinden yapılır; e-posta adresin ve şifre özetin Google'ın sunucularında
 saklanır. Google bu veriyi bizim adımıza işler.
 Ayrıntı: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase gizlilik bilgileri</a>.</p>
+<p><strong>Apple ile giriş</strong> (iOS) seçersen Apple yalnızca adını ve e-posta adresini
+paylaşır; dilersen e-postanı gizleyip Apple'ın yönlendirme adresini kullanabilirsin.
+Hesabını sildiğinde Apple ile girişin erişim yetkisini de iptal ederiz.
+Ayrıntı: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple gizlilik politikası</a>.</p>
 <p>Uygulama beklenmedik biçimde hata verirse, teknik hata kaydı
 <strong>Sentry</strong> (Functional Software, Inc.) üzerinden bize iletilir.
 Bu kayıt yalnızca hatanın kendisini ve cihaz modeli/işletim sistemi sürümü
 gibi teknik bilgiyi içerir; kişisel verin gönderilmez.
 Ayrıntı: <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry gizlilik politikası</a>.</p>
-<p>Bunun dışında hiçbir üçüncü tarafa veri aktarmıyoruz. Uygulama, Firebase ve
-Sentry dışında herhangi bir sunucuyla iletişim kurmaz.</p>
+<p>Bunun dışında hiçbir üçüncü tarafa veri aktarmıyoruz. Uygulama; Firebase, Sentry,
+giriş için seçtiğin Google ya da Apple hizmeti ve "El Akoru" oyununun kütüphane
+indirmesi (jsDelivr, Google) dışında hiçbir sunucuyla iletişim kurmaz.</p>
 
 <h2>5. Misafir kullanım</h2>
 <p>Hesap açmadan "misafir olarak devam et" diyebilirsin. Bu durumda hiçbir
@@ -120,7 +129,8 @@ kalır. Uygulamayı silersen bu veriler de silinir.</p>
 <p>İki ayrı yol var:</p>
 <ul>
   <li><strong>Uygulama içinden:</strong> Ayarlar → <em>Hesabımı sil</em>. Bu, hem
-  Firebase'deki hesabını hem de cihazındaki tüm ilerlemeni kalıcı olarak siler.</li>
+  Firebase'deki hesabını hem de cihazındaki tüm ilerlemeni kalıcı olarak siler.
+  Apple ile giriş yaptıysan Apple yetkisi de iptal edilir.</li>
   <li><strong>Yalnızca cihazdaki veriyi silmek için:</strong> Ayarlar →
   <em>Tüm Verileri Sıfırla</em>. Hesabın korunur.</li>
   <li><strong>E-posta ile:</strong> Uygulamaya erişemiyorsan

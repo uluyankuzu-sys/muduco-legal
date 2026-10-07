@@ -46,8 +46,12 @@ adının yıllık ücretini ödersin. Bağladıktan sonra `legal-urls.ts`'teki `
 
 Metinler uygulamanın bugünkü davranışına göre yazıldı ve şu iddiaları içeriyor:
 
-- ağ isteği yok (Firebase SDK hariç), analitik/telemetri yok, reklam yok
+- ağ istekleri yalnızca: Firebase (hesap), Sentry (çökme kaydı), seçilen giriş
+  hizmeti (Google / Apple) ve El Akoru oyununun MediaPipe indirmesi
+  (cdn.jsdelivr.net, storage.googleapis.com); analitik/telemetri yok, reklam yok
 - mikrofon sesi ve kamera görüntüsü cihazdan çıkmıyor, kaydedilmiyor
+- bazı sesler açık lisanslı üçüncü taraf kayıtlardan (uygulamada Ayarlar →
+  Teşekkürler; kaynak listesi uygulama deposunda `assets/sounds/LISANSLAR.md`)
 
 **Bu davranışlardan biri değişirse metni de güncelle.** Örneğin Sentry (çökme
 raporlama) eklenirse "analitik veya çökme raporlama aracı kullanmıyoruz"

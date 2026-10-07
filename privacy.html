@@ -15,7 +15,7 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 9 August 2026</p>
+<p class="updated">Last updated: 7 October 2026</p>
 
 <div class="card">
   <p><strong>In short:</strong> Muduco does not track you. We use no ad networks,
@@ -38,7 +38,7 @@ described here.</p>
   <tr><th>Data</th><th>When</th><th>Where it lives</th></tr>
   <tr>
     <td><strong>Email address</strong></td>
-    <td>Only if you create an account with email or Google</td>
+    <td>Only if you create an account with email, Google or Apple</td>
     <td>On Google Firebase Authentication servers</td>
   </tr>
   <tr>
@@ -87,6 +87,10 @@ When you close the app, no audio data remains.</p>
 <p>The "Hand Chords" game lets you play chords with finger gestures. The video is
 processed on your device; only "which chord was played" reaches the game.
 <strong>No photo or video is captured, stored, or sent to any server.</strong></p>
+<p>The open-source hand-tracking library (Google MediaPipe) and its hand model are
+downloaded from <strong>jsDelivr</strong> and <strong>Google</strong> servers when you
+open the game. As with any web request, your device's IP address is visible to those
+servers during the download; no camera image or other personal data is sent.</p>
 
 <h2>3. What we do not do</h2>
 <ul>
@@ -103,13 +107,18 @@ processed on your device; only "which chord was played" reaches the game.
 <strong>Google Firebase Authentication</strong>; your email address and password hash are
 stored on Google's servers. Google processes this data on our behalf. Details:
 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a>.</p>
+<p>If you choose <strong>Sign in with Apple</strong> (iOS), Apple shares only your name and
+email address, and you can hide your email behind Apple's relay address. When you
+delete your account we also revoke the Sign in with Apple authorisation.
+Details: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple privacy policy</a>.</p>
 <p>If the app fails unexpectedly, a technical error report is sent to us through
 <strong>Sentry</strong> (Functional Software, Inc.). The report contains only the
 error itself and technical information such as device model and OS version; no
 personal data is sent.
 Details: <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry privacy policy</a>.</p>
 <p>We transfer data to no other third party. The app communicates with no server
-other than Firebase and Sentry.</p>
+other than Firebase, Sentry, the Google or Apple sign-in service you choose, and the
+"Hand Chords" library download (jsDelivr, Google).</p>
 
 <h2>5. Guest use</h2>
 <p>You can tap "continue as guest" without creating an account. In that case no
@@ -120,7 +129,8 @@ If you uninstall the app, that data is gone too.</p>
 <p>There are several routes:</p>
 <ul>
   <li><strong>In the app:</strong> Settings → <em>Delete my account</em>. This permanently
-  deletes both your Firebase account and all progress on your device.</li>
+  deletes both your Firebase account and all progress on your device. If you signed in
+  with Apple, the Apple authorisation is revoked as well.</li>
   <li><strong>To erase device data only:</strong> Settings → <em>Reset All Data</em>.
   Your account is kept.</li>
   <li><strong>By email:</strong> If you cannot access the app, write to
