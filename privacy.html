@@ -15,27 +15,27 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 7 October 2026</p>
+<p class="updated">Last updated: 17 November 2026</p>
 
 <div class="card">
-  <p><strong>In short:</strong> Muduco does not track you. We use no ad networks,
-  no analytics, and no tracking tools. Data from your microphone and camera
-  <strong>never leaves your device</strong>. You can use the app without an account,
-  as a guest — in that case no personal data reaches us at all.
-  One exception: if the app <strong>crashes</strong>, a technical error report is
-  sent; it contains no personal data.</p>
+  <p><strong>In short:</strong> Muduco does not track you and shows no ads. Your lesson progress
+  stays <strong>only on your device</strong>. Data from your microphone and camera
+  <strong>never leaves your device</strong>. The app only fetches announcements and app
+  settings from our own server, and sends <strong>anonymous aggregate counts</strong> that
+  do not identify you (you can turn this off in Settings). If you write to us (feedback or
+  email), what you write reaches us. Creating an account is optional.</p>
 </div>
 
-<h2>1. Who this policy covers</h2>
-<p>This policy applies to the <strong>Muduco</strong> music education app published for
-Android and iOS. By installing and using the app, you agree to the practices
-described here.</p>
+<h2>1. Who this policy is for</h2>
+<p>This policy applies to the <strong>Muduco</strong> music-learning app for Android and iOS
+and its support service (destek@muduco.com). By installing and using the app you agree to
+what is described here.</p>
 
 <h2>2. What data we process</h2>
 
 <div class="scroll">
 <table>
-  <tr><th>Data</th><th>When</th><th>Where it lives</th></tr>
+  <tr><th>Data</th><th>When</th><th>Where it is kept</th></tr>
   <tr>
     <td><strong>Email address</strong></td>
     <td>Only if you create an account with email, Google or Apple</td>
@@ -43,128 +43,201 @@ described here.</p>
   </tr>
   <tr>
     <td><strong>Password</strong></td>
-    <td>Only if you register with email</td>
-    <td>Hashed by Firebase. We can never see your password.</td>
+    <td>Only if you sign up with email</td>
+    <td>Encrypted by Firebase. We can never see your password.</td>
   </tr>
   <tr>
-    <td><strong>Your display name and avatar</strong></td>
+    <td><strong>Your name</strong></td>
+    <td>Only if you sign in with Apple and Apple shares your name</td>
+    <td>In your Firebase account (as the account name)</td>
+  </tr>
+  <tr>
+    <td><strong>Profile name and avatar</strong></td>
     <td>If you enter them</td>
-    <td>On your device only</td>
+    <td>Only on your device</td>
   </tr>
   <tr>
     <td><strong>Lesson progress, XP, streak, badges, game records</strong></td>
-    <td>As you use the app</td>
-    <td>On your device only</td>
+    <td>While you use the app</td>
+    <td>Only on your device</td>
+  </tr>
+  <tr>
+    <td><strong>Anonymous usage counts</strong></td>
+    <td>While you use the app (you can turn this off in Settings)</td>
+    <td>On the Muduco server, as aggregate totals only — see below</td>
+  </tr>
+  <tr>
+    <td><strong>Feedback and question reports</strong></td>
+    <td>If you use the in-app form or the "Report question" button</td>
+    <td>On the Muduco server — see below</td>
+  </tr>
+  <tr>
+    <td><strong>Emails you send us</strong></td>
+    <td>If you write to destek@muduco.com</td>
+    <td>In the Muduco support inbox and the support team's email account</td>
+  </tr>
+  <tr>
+    <td><strong>Notification token</strong></td>
+    <td>Only if you turn on announcement notifications</td>
+    <td>On the Muduco server; deleted when you turn notifications off</td>
   </tr>
   <tr>
     <td><strong>Microphone audio</strong></td>
-    <td>In the tuner and audio games</td>
-    <td><strong>Never stored anywhere</strong> — see below</td>
+    <td>In the tuner and voice games</td>
+    <td><strong>Never stored</strong> — see below</td>
   </tr>
   <tr>
-    <td><strong>Camera video</strong></td>
-    <td>Only in the "Hand Chords" game</td>
-    <td><strong>Never stored anywhere</strong> — see below</td>
+    <td><strong>Camera image</strong></td>
+    <td>Only in the "Hand Chord" game</td>
+    <td><strong>Never stored</strong> — see below</td>
   </tr>
   <tr>
     <td><strong>Crash and error reports</strong></td>
     <td>Only if the app fails unexpectedly</td>
-    <td>On Sentry's servers. The error message, the line of code it occurred on,
-        the device model and the OS version. <strong>Your name, email and
+    <td>On Sentry servers. The error message, the line of code where it happened,
+        device model and operating system version. <strong>Your name, email and
         lesson progress are not sent.</strong></td>
   </tr>
 </table>
 </div>
 
+<h3>Announcements and app settings</h3>
+<p>When the app opens, and from time to time, it fetches current announcements and app
+settings (for example a "new version available" notice or a maintenance message) from our own
+server at <strong>api.muduco.com</strong>. The request only contains your chosen language,
+whether your device runs Android or iOS, and the app version; nothing that identifies you is
+sent. Whether you have read an announcement is stored only on your device.</p>
+
+<h3>Anonymous usage counts</h3>
+<p>To improve the app, we learn <strong>aggregate totals only</strong>: on how many devices it
+is used, which lessons are finished or abandoned, which questions are hard and which games
+are played. These counts contain <strong>no identity, device ID, name, email or account</strong>;
+we cannot tell, and do not want to know, what any individual did. Counts may be split by
+language, platform and app version; very small groups are not shown in our dashboard. You can
+turn this off at any time in <strong>Settings → Anonymous usage statistics</strong>.</p>
+
+<h3>Feedback and question reports</h3>
+<p>When you send the in-app form, we receive: your message, the type you chose (bug,
+suggestion, etc.), your email address <strong>if you enter it</strong> (so we can reply; it is
+optional), the app version, operating system version, platform, language and the screen you
+were on. For "Report question" we also receive the lesson, the question number and the reason
+you chose. Please <strong>do not include personal information</strong> in your message (for
+example your full name or phone number).</p>
+
+<h3>Notifications (optional)</h3>
+<p>If <strong>you turn on</strong> announcement notifications, your device's notification
+token (a random address), language, platform and app version are stored on our server so we
+can send notifications to your phone. Notifications are delivered through the
+<strong>Expo</strong> notification service and, depending on your phone,
+<strong>Google Firebase Cloud Messaging</strong> or <strong>Apple Push Notification
+Service</strong>. The token is deleted from our server when you turn notifications off,
+reset the app or delete your account.</p>
+
 <h3>Microphone</h3>
-<p>The tuner and some games measure the <strong>pitch</strong> (frequency) of the sound you
-play or sing. The audio is analysed momentarily in your device's memory, and all
-that comes out is <strong>a single number</strong> — for example "440 Hz". The audio is
-<strong>not recorded, not written to any file, and never sent to any server.</strong>
-When you close the app, no audio data remains.</p>
+<p>The tuner and some games measure the <strong>pitch</strong> (frequency) of what you play or
+sing. The sound is analysed in your device's memory in real time and only <strong>a number</strong>
+— for example "440 Hz" — is used. Audio is <strong>not recorded, not written to a file and not
+sent to any server.</strong> When you close the app, no audio data remains.</p>
 
 <h3>Camera</h3>
-<p>The "Hand Chords" game lets you play chords with finger gestures. The video is
-processed on your device; only "which chord was played" reaches the game.
-<strong>No photo or video is captured, stored, or sent to any server.</strong></p>
-<p>The open-source hand-tracking library (Google MediaPipe) and its hand model are
-downloaded from <strong>jsDelivr</strong> and <strong>Google</strong> servers when you
-open the game. As with any web request, your device's IP address is visible to those
-servers during the download; no camera image or other personal data is sent.</p>
+<p>The "Hand Chord" game lets you play chords with finger gestures. The image is processed on
+your device; only "which chord was played" is passed to the game. <strong>No photos or videos
+are taken, stored or sent to any server.</strong></p>
+<p>The open-source library that recognises hand gestures (Google MediaPipe) is bundled with the
+app on Android. On iOS it may be downloaded from <strong>jsDelivr</strong> and
+<strong>Google</strong> servers the first time you open the game; as with any web request, your
+device's IP address is visible to those servers during the download. No camera image or other
+personal data is sent.</p>
 
-<h2>3. What we do not do</h2>
+<h2>3. What we don't do</h2>
 <ul>
-  <li>We show no ads and use no ad networks.</li>
-  <li>We use no analytics or usage tracking tools.</li>
-  <li>We do not sell, rent, or share your data for marketing.</li>
-  <li>We do not access your location.</li>
-  <li>We do not access your contacts, photos, or files.</li>
-  <li>We do not knowingly collect personal data from children.</li>
+  <li>We don't show ads or use ad networks.</li>
+  <li>We don't use analytics or tracking tools that identify you; we only keep the anonymous
+  aggregate counts described above.</li>
+  <li>We don't store your IP address. (As with every internet request, it is processed
+  momentarily by our hosting provider Cloudflare while the request reaches our server; we do
+  not keep it or link it to any data.)</li>
+  <li>We don't sell, rent or share your data for marketing.</li>
+  <li>We don't access your location.</li>
+  <li>We don't access your contacts, photos or files.</li>
+  <li>We don't knowingly collect personal data from children.</li>
 </ul>
 
-<h2>4. Who we share data with</h2>
-<p>If you choose to create an account, authentication is handled by
-<strong>Google Firebase Authentication</strong>; your email address and password hash are
-stored on Google's servers. Google processes this data on our behalf. Details:
-<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a>.</p>
-<p>If you choose <strong>Sign in with Apple</strong> (iOS), Apple shares only your name and
-email address, and you can hide your email behind Apple's relay address. When you
-delete your account we also revoke the Sign in with Apple authorisation.
-Details: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple privacy policy</a>.</p>
-<p>If the app fails unexpectedly, a technical error report is sent to us through
-<strong>Sentry</strong> (Functional Software, Inc.). The report contains only the
-error itself and technical information such as device model and OS version; no
-personal data is sent.
-Details: <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry privacy policy</a>.</p>
-<p>We transfer data to no other third party. The app communicates with no server
-other than Firebase, Sentry, the Google or Apple sign-in service you choose, and the
-"Hand Chords" library download (jsDelivr, Google).</p>
+<h2>4. Services that process your data</h2>
+<p>These services process data on our behalf and only for the purposes described here:</p>
+<ul>
+  <li><strong>Google Firebase Authentication</strong> — sign-in and account data if you create an account.
+  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Details</a></li>
+  <li><strong>Sign in with Apple</strong> (iOS) — Apple shares only your name and email address;
+  you can hide your email and use Apple's relay address. When you delete your account we also
+  revoke the Apple authorisation.
+  <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Details</a></li>
+  <li><strong>Cloudflare</strong> (Cloudflare, Inc.) — our server api.muduco.com, anonymous counts,
+  feedback, notification tokens and support emails run and are stored on Cloudflare's infrastructure.
+  <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Details</a></li>
+  <li><strong>Sentry</strong> (Functional Software, Inc.) — crash and error reports; no personal data.
+  <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Details</a></li>
+  <li><strong>Expo</strong> (650 Industries, Inc.), <strong>Google Firebase Cloud Messaging</strong>,
+  <strong>Apple Push Notification Service</strong> — only if you turn on notifications, to deliver
+  them to your phone.</li>
+  <li><strong>Google (Gmail)</strong> and <strong>Resend</strong> (Resend, Inc.) — when we receive
+  support emails and send you replies.</li>
+</ul>
+<p>We transfer no data to any other third party. Some of these services run on servers
+outside Turkey (for example in the USA and the EU).</p>
 
 <h2>5. Guest use</h2>
-<p>You can tap "continue as guest" without creating an account. In that case no
-personal data reaches us or Google; all your progress stays on your device only.
-If you uninstall the app, that data is gone too.</p>
+<p>You can choose "continue as guest" without creating an account. Your lesson progress then
+stays only on your device and no personal data that identifies you reaches us. Only if you send
+feedback yourself or turn on notifications does the information described above reach us. If
+you delete the app, the data on your device is deleted too.</p>
 
 <h2>6. Your right to deletion</h2>
-<p>There are several routes:</p>
 <ul>
-  <li><strong>In the app:</strong> Settings → <em>Delete my account</em>. This permanently
-  deletes both your Firebase account and all progress on your device. If you signed in
-  with Apple, the Apple authorisation is revoked as well.</li>
-  <li><strong>To erase device data only:</strong> Settings → <em>Reset All Data</em>.
+  <li><strong>In the app:</strong> Settings → <em>Delete my account</em>. This permanently deletes
+  both your Firebase account and all progress on your device. If you signed in with Apple, the
+  Apple authorisation is revoked as well. Your notification token is also deleted.</li>
+  <li><strong>To delete only the data on your device:</strong> Settings → <em>Reset all data</em>.
   Your account is kept.</li>
-  <li><strong>By email:</strong> If you cannot access the app, write to
-  <a href="mailto:destek@muduco.com?subject=Muduco%20account%20deletion%20request">destek@muduco.com</a>
-  from your account's email address. We will action your request
-  <strong>within 30 days</strong>.</li>
+  <li><strong>By email:</strong> If you cannot access the app, or want feedback or an email you
+  sent us deleted, write to
+  <a href="mailto:destek@muduco.com?subject=Muduco%20deletion%20request">destek@muduco.com</a>.
+  We will complete your request <strong>within 30 days</strong>.</li>
 </ul>
-<p>After deletion, your account and the data attached to it cannot be recovered.</p>
+<p>Anonymous usage counts cannot be matched to anyone, so they cannot be deleted per person;
+they contain no information about you.</p>
 
 <h2>7. How long data is kept</h2>
-<p>Your account is kept until you delete it. Progress on your device stays there
-until you uninstall or reset the app. Microphone and camera data are never
-retained at all.</p>
+<ul>
+  <li><strong>Your account:</strong> until you delete it.</li>
+  <li><strong>Feedback and support emails:</strong> at most 24 months; earlier if you ask us to delete them.</li>
+  <li><strong>Notification token:</strong> until you turn notifications off or do not open the app for 9 months.</li>
+  <li><strong>Anonymous usage counts:</strong> indefinitely, as aggregate totals.</li>
+  <li><strong>Progress on your device:</strong> until you delete or reset the app.</li>
+  <li><strong>Microphone and camera data:</strong> never stored.</li>
+</ul>
 
-<h2>8. Your rights under GDPR and similar laws</h2>
+<h2>8. Your rights under KVKK and GDPR</h2>
 <p>Depending on where you live, you have the right to <strong>access</strong>,
-<strong>rectify</strong>, <strong>erase</strong>, <strong>object to the processing of</strong>, and
-<strong>port</strong> your data. To exercise these rights, contact us at the email address
-above.</p>
-<p>Legal basis: where you create an account, we process your email address on the
-basis of <strong>performance of a contract</strong> — it is necessary to provide the
-service to you.</p>
+<strong>rectify</strong> and <strong>erase</strong> your data, to <strong>object</strong> to its
+processing and to <strong>data portability</strong>. To use these rights, contact us at
+destek@muduco.com.</p>
+<p>Legal basis: we process account data for the <strong>performance of the contract</strong>
+needed to provide the service; feedback and emails at your request, so we can reply; anonymous
+usage counts on the basis of our <strong>legitimate interest</strong> in improving the app, with
+your right to turn them off; and the notification token with your <strong>consent</strong>
+(when you turn notifications on).</p>
 
 <h2>9. Children's privacy</h2>
-<p>Muduco is designed for learners of all ages, but we do not knowingly collect
-personal data from users under 13. If you are a parent or guardian who believes
-your child has sent us data, write to the address above and we will delete it.
-We recommend that children use the app in <strong>guest mode</strong>, where no personal
-data is collected at all.</p>
+<p>Muduco is designed for learners of all ages, but we do not knowingly collect personal data
+from users under 13. We recommend that children use the app in <strong>guest mode</strong> and
+do not write an email address or personal information in the feedback form. If you are a parent
+or guardian and believe your child sent us data, write to destek@muduco.com and we will delete
+it.</p>
 
 <h2>10. Changes</h2>
-<p>We may update this policy from time to time. If a change is significant we
-will notify you in the app. The "last updated" date at the top of this page
-always reflects the current version.</p>
+<p>We may update this policy from time to time. If there is an important change, we will tell
+you in the app. The "last updated" date at the top always shows the current version.</p>
 
 <h2>11. Contact</h2>
 <p>Questions: <a href="mailto:destek@muduco.com?subject=Muduco%20privacy">destek@muduco.com</a></p>
