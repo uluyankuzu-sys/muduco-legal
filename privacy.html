@@ -51,7 +51,7 @@ what is described here.</p>
   <tr>
     <td><strong>Your name</strong></td>
     <td>Only if you sign in with Google or Apple and they share your name</td>
-    <td>In your Firebase account (as the account name)</td>
+    <td>In your Firebase account (as the account name). If you sign in with Google, the link to your Google profile photo is kept there too.</td>
   </tr>
   <tr>
     <td><strong>Profile name and avatar</strong></td>
@@ -191,6 +191,10 @@ from the anonymous usage counts and are never combined with them.</p>
 <ul>
   <li><strong>Google Firebase Authentication</strong> — sign-in and account data if you create an account.
   <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Details</a></li>
+  <li><strong>Sign in with Google</strong> — if you create an account with Google, Google shares your name,
+  email address and the link to your profile photo; these are kept in your Firebase account. When you
+  delete your account we also revoke the app's access to your Google account.
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Details</a></li>
   <li><strong>Sign in with Apple</strong> (iOS) — Apple shares only your name and email address;
   you can hide your email and use Apple's relay address. When you delete your account we also
   revoke the Apple authorisation.
@@ -221,8 +225,8 @@ you delete the app, the data on your device is deleted too.</p>
 <h2>6. Your right to deletion</h2>
 <ul>
   <li><strong>In the app:</strong> Settings → <em>Delete my account</em>. This permanently deletes
-  both your Firebase account and all progress on your device. If you signed in with Apple, the
-  Apple authorisation is revoked as well. Your notification token, your username and your
+  both your Firebase account and all progress on your device. If you signed in with Google or Apple,
+  the app's Google or Apple authorisation is revoked as well. Your notification token, your username and your
   leaderboard scores are also deleted. Your username is not given to anyone else for 30 days;
   after that it can be taken again.</li>
   <li><strong>To delete only the data on your device:</strong> Settings → <em>Reset all data</em>.

@@ -51,7 +51,7 @@ Uygulamayı yükleyerek ve kullanarak burada anlatılanları kabul etmiş olursu
   <tr>
     <td><strong>Adın</strong></td>
     <td>Yalnızca Google ya da Apple ile hesap açarsan ve adını paylaşırlarsa</td>
-    <td>Firebase hesabında (hesap adı olarak)</td>
+    <td>Firebase hesabında (hesap adı olarak). Google ile hesap açarsan Google profil fotoğrafının bağlantısı da burada durur.</td>
   </tr>
   <tr>
     <td><strong>Profil adın ve avatarın</strong></td>
@@ -191,6 +191,10 @@ ve onlarla birleştirilmez.</p>
 <ul>
   <li><strong>Google Firebase Authentication</strong> — hesap açarsan giriş ve hesap bilgileri.
   <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Ayrıntı</a></li>
+  <li><strong>Google ile giriş</strong> — Google ile hesap açarsan Google adını, e-posta adresini ve
+  profil fotoğrafının bağlantısını paylaşır; bunlar Firebase hesabında durur. Hesabını sildiğinde
+  uygulamanın Google hesabına erişim iznini de iptal ederiz.
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Ayrıntı</a></li>
   <li><strong>Apple ile giriş</strong> (iOS) — Apple yalnızca adını ve e-posta adresini paylaşır;
   dilersen e-postanı gizleyip Apple'ın yönlendirme adresini kullanabilirsin. Hesabını sildiğinde
   Apple yetkisini de iptal ederiz.
@@ -222,7 +226,7 @@ bize gönderilmez. Uygulamayı silersen cihazındaki veriler de silinir.</p>
 <ul>
   <li><strong>Uygulama içinden:</strong> Ayarlar → <em>Hesabımı sil</em>. Bu, hem
   Firebase'deki hesabını hem de cihazındaki tüm ilerlemeni kalıcı olarak siler.
-  Apple ile giriş yaptıysan Apple yetkisi de iptal edilir. Bildirim jetonun, kullanıcı adın ve
+  Google ya da Apple ile giriş yaptıysan uygulamanın Google ya da Apple erişim izni de iptal edilir. Bildirim jetonun, kullanıcı adın ve
   sıralamalardaki puanların da silinir. Kullanıcı adın 30 gün boyunca başkasına verilmez, sonra
   yeniden alınabilir.</li>
   <li><strong>Yalnızca cihazdaki veriyi silmek için:</strong> Ayarlar →
